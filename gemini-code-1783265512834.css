@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #111827;
+    color: white;
+}
+
+header {
+    background: #1f2937;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+}
+
+header h2 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 8%;
+    min-height: 80vh;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.left h3 {
+    color: #38bdf8;
+    margin-bottom: 15px;
+}
+
+.left p {
+    color: #d1d5db;
+    margin-bottom: 25px;
+    line-height: 28px;
+}
+
+.btn a {
+    display: inline-block;
+    padding: 12px 22px;
+    background: #38bdf8;
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn a:hover {
+    background: white;
+}
+
+.right {
+    width: 40%;
+    text-align: center;
+}
+
+.right img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 4px solid #38bdf8;
+}
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #38bdf8;
+}
+
+/* Study Resources সেকশনের নতুন ডিজাইন */
+.study-list {
+    list-style: none;
+    margin-left: 0;
+    max-width: 600px;
+}
+
+.study-list li {
+    background: #1f2937;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #374151;
+}
+
+.study-list li span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #38bdf8;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1f2937;
+    margin-top: 40px;
+}
+
+@media(max-width: 768px) {
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .left,
+    .right {
+        width: 100%;
+    }
+    .left h1 {
+        font-size: 36px;
+    }
+    .right img {
+        width: 220px;
+        height: 220px;
+        margin-bottom: 30px;
+    }
+    nav {
+        display: none;
+    }
+}
